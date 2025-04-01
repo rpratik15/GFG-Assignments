@@ -1,0 +1,32 @@
+.container
+{
+    width: 30%;
+    margin: 5px;
+  padding: 5px;
+    align-items: center;
+    
+    
+}
+
+.container>div
+{
+    color: blue;
+    padding: 15px;
+    margin-bottom: 8px;
+    border: 1px solid rgb(203, 203, 212);
+    width: 100%;
+    text-align: center;
+}
+
+.container > button
+{
+    color: white;
+    background-color: rgb(20, 44, 24);
+    padding: 5px;
+    margin: 7px 15px; 
+    border-radius: 15px;
+    cursor: pointer;
+    width: 70%;
+    height: 50px;
+    font-weight : "bold";
+}
