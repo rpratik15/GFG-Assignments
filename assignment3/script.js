@@ -2,8 +2,10 @@
 
 
 const changeBackcolor = () => {
+ 
+
     let randomColor = Math.floor(Math.random() * 100);
-    console.log(randomColor)
+    
     let item = document.getElementById("item1");
 
     item.style.backgroundColor = `rgb(14,${randomColor},125)`;
@@ -24,4 +26,19 @@ const changeRadious=()=>{
     item.style.border = "1px solid black";
     item.style.borderRadius = "20px";
 
+}
+
+const changePosition=()=>{
+
+    let item = document.getElementById("item4");
+    item.style.position = "absolute";
+    item.style.top = "300px";
+    item.style.left = "100px";
+}
+
+const changeCursor=()=>{
+    let item = document.getElementById("item5");
+    item.style.cursor = "pointer";
+    item.style.textDecoration = "underline";
+    item.style.color = "blue";
 }
