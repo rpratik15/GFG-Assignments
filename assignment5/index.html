@@ -10,7 +10,7 @@
 <body>
     <div class="form">
         <h1>Login</h1>
-        <form id="loginForm" onsubmit="onsubmit()">
+        <div id="loginForm" >
             <div class="input-container">
                 <label for="username">Username:</label>
                 <input type="text" id="username" name="username" required>
@@ -19,8 +19,8 @@
                 <label for="password">Password:</label>
                 <input type="password" id="password" name="password" required>
             </div>
-            <button type="submit" >Login</button>
-        </form>
+            <button onclick="submit()">Login</button>
+        </div>
         <p id="error-message"></p>
 
     </div>
