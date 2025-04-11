@@ -20,12 +20,13 @@ let products = [
       item: "Casual Shoes"
     }
    ];
+   
    let Container = document.getElementById("container");
    products.map((product) => {
    
     let productElement = document.createElement("div");
     productElement.className="product";
-  
+    Container.appendChild(productElement);
     let paragraph=document.createElement("p");
     paragraph.innerText="ID :"+product.id;
     let h3=document.createElement("h3");
@@ -34,7 +35,10 @@ let products = [
     button.innerText="Remove";
     productElement.appendChild(paragraph);
     productElement.appendChild(h3);
-    Container.appendChild(productElement);
+    productElement.appendChild(button);
+    button.addEventListener("click", () => {
+        productElement.remove();
+    });
     
    });
 
