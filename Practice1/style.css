@@ -1,0 +1,29 @@
+.container
+{
+   display: flex;
+    justify-content: center;
+    
+    gap:30px
+    
+}
+
+.product
+{
+    background-color: rgb(235, 247, 167);
+    border-radius: 16px;
+    margin: 5px;
+    padding: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 150px;
+    text-align: center;
+}
+
+button
+{
+    background-color: rgb(79, 85, 3);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
