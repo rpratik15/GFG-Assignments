@@ -1,0 +1,48 @@
+.container {
+    display: flex    ;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 400px;
+        height: 58vh;
+        background-color: rgb(215, 240, 248);
+        margin: 30px auto;
+        border-radius: 10px;
+}
+
+h2{
+    font-size: 16px;
+    margin: 12px;
+}
+button
+{
+    background-color: rgb(0, 0, 0);
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+   
+}
+
+button:hover {
+    background-color: rgb(240, 190, 190);
+    color: rgb(7, 0, 0);
+
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 20px;
+    cursor: pointer;
+    
+}
+
+
+#select {
+    width: 90%;
+    height: 30px;
+    margin: 20px ;
+    border-radius: 5px;
+    border: 1px solid #380303;
+    padding: 5px;
+    font-size: 16px;
+}
