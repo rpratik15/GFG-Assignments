@@ -1,0 +1,33 @@
+.form
+{
+    background-color: beige;
+    width:400px;
+    margin:10px auto;
+    text-align: center;
+
+}
+
+.input-container
+{
+    margin: 10px 0;
+    padding: 5px ;
+}
+
+button
+{
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    border-radius: 16px;
+   
+    font-size: 16px;
+   
+    cursor: pointer;
+}
+
+#error-message
+{
+    color: red;
+}
