@@ -1,3 +1,11 @@
+
+.header{
+ 
+    align-items: center;
+    
+    margin: 0 auto;
+    padding: 10px 0;
+}
 .navbar{
     display: flex;
     width: 90%;
@@ -14,4 +22,32 @@
     list-style: none;
     padding: 0;
     margin: 0;
+}
+
+.section{
+   
+   
+    margin: 0 auto;
+    padding: 10px 0;
+}
+.container>img{
+    width: 100%;
+   
+    
+    margin: 0 auto;
+    
+}
+
+.container>p{
+
+    position: absolute;
+    top:1;
+    
+    background-color: antiquewhite;
+}
+.container{
+    background-color: #e4f1c4;
+    position: relative; 
+    width: 800px;
+    height: 500px;
 }
