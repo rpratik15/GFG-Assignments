@@ -71,6 +71,7 @@ button
     color: white;
     cursor: pointer;
     font-size: 16px;
+  
     
 }
 button:hover
@@ -136,8 +137,8 @@ button:active
 .question-box
 {
     display: flex;
-    justify-content: center;
-    align-items: center;
+    /* justify-content: center; */
+    /* align-items: center; */
     flex-direction: column;
     margin: 5px auto;
     gap: 15px;
@@ -147,6 +148,7 @@ button:active
     border-radius: 15px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
+
 
 .options
 {
