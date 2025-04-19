@@ -21,25 +21,29 @@ let products = [
     }
    ];
    
-   let Container = document.getElementById("container");
-   products.map((product) => {
+
+   let fruits=["Apple","Mango","Papaya","Dragon Fruit","Kiwi"]
+   fruits.splice(4,1)
+   console.log(fruits)
+  //  let Container = document.getElementById("container");
+  //  products.map((product) => {
    
-    let productElement = document.createElement("div");
-    productElement.className="product";
-    Container.appendChild(productElement);
-    let paragraph=document.createElement("p");
-    paragraph.innerText="ID :"+product.id;
-    let h3=document.createElement("h3");
-    h3.innerText="Item :"+product.item;
-    let button=document.createElement("button");
-    button.innerText="Remove";
-    productElement.appendChild(paragraph);
-    productElement.appendChild(h3);
-    productElement.appendChild(button);
-    button.addEventListener("click", () => {
-        productElement.remove();
-    });
+  //   let productElement = document.createElement("div");
+  //   productElement.className="product";
+  //   Container.appendChild(productElement);
+  //   let paragraph=document.createElement("p");
+  //   paragraph.innerText="ID :"+product.id;
+  //   let h3=document.createElement("h3");
+  //   h3.innerText="Item :"+product.item;
+  //   let button=document.createElement("button");
+  //   button.innerText="Remove";
+  //   productElement.appendChild(paragraph);
+  //   productElement.appendChild(h3);
+  //   productElement.appendChild(button);
+  //   button.addEventListener("click", () => {
+  //       productElement.remove();
+  //   });
     
-   });
+  //  });
 
    

@@ -46,18 +46,17 @@ catagoryButton.addEventListener("click", function () {
 const getQuestions = async (catagory) => {
     let data = await fetch(`https://opentdb.com/api.php?amount=10&category=${catagory}&type=multiple`).then(res => res.json())
     questions = data.results;
-    await loadQuestion(true);
+    await loadQuestion();
 }
 
-const loadQuestion = async (next) => {
+const loadQuestion = async () => {
 
-    
-    
-        if(next)
+
+
+    if (queCounter <= questions.length) {
         queCounter++;
-    else
-    queCounter--;
-if (queCounter < questions.length) {
+
+   
         queNo.innerText = queCounter;
         // let randNo = getRamdomNo();
         let randNo = queCounter;
@@ -86,8 +85,7 @@ if (queCounter < questions.length) {
         })
         //    console.log(optContainer)
     }
-    else
-    {
+    else {
         alert("End of questions!!!");
     }
 }
@@ -109,10 +107,12 @@ const shuffleOptions = (options) => {
 }
 
 const checkAnswer = () => {
+    let next=document.getElementById("next")
     try {
         let clickedValue = document.querySelector("input[type='radio'][name=option]:checked").value;
 
         if (clickedValue === correctAns) {
+            
             alert("Good!!! Right answer")
         }
         else {
