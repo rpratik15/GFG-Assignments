@@ -20,7 +20,34 @@
 //       item: "Casual Shoes"
 //     }
 //    ];
-   
+const el = document.querySelector('.mouse');
+let lastMove = 0;
+
+function onMouseMove(e) {
+x = e.clientX;
+y = e.clientY;
+updateMouse(x, y);
+lastMove = Date.now();
+}
+
+function updateMouse(x, y) {
+el.style.transform = `translate(${x}px, ${y}px)`;
+}
+
+function render(a) {
+if (Date.now() - lastMove > 500) {
+const noiseX = (noise.simplex3(2, 0, a * 0.0004) + 1) / 2;
+const noiseY = (noise.simplex3(10, 0, a * 0.0004) + 1) / 2;
+const x = noiseX * innerWidth;
+const y = noiseY * innerHeight;
+updateMouse(x, y);
+}
+
+requestAnimationFrame(render);
+}
+
+window.addEventListener('mousemove', onMouseMove);
+requestAnimationFrame(render);
 <<<<<<< HEAD
 //    let Container = document.getElementById("container");
 //    products.map((product) => {
