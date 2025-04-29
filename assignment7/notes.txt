@@ -1,4 +1,17 @@
 Create a node app using npm init -y
 install express mongoose nodemon using npm i express mongoose nodemon
 Create server and start it
-Create mongoose model
+    mongoose.connect("mongodb://localhost:27017/test")
+    app.listen(5000,()=>{
+    console.log("Starting port 5000");})
+
+Create mongoose model.js
+
+    const newSchema=new mongoose.Schema({
+    name:{type:String, require:true},
+    age:{type:Number},
+    email:{type:String, unique:true}
+    });
+    const personModel=mongoose.model('collection_name',newSchema)
+
+import model in route.js
