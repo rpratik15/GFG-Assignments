@@ -1,0 +1,4 @@
+Create a node app using npm init -y
+install express mongoose nodemon using npm i express mongoose nodemon
+Create server and start it
+Create mongoose model
