@@ -30,6 +30,12 @@ button
     cursor: pointer;
 }
 
+<<<<<<< HEAD
+.item3
+{
+    flex-shrink: 1;
+}
+=======
 
 @keyframes example {
     0%   {background-color:red; left:0px; top:0px;}
@@ -52,3 +58,4 @@ button
     /* animation-direction: alternate; */
     
   }
+>>>>>>> 93963513fe359df2c1c30dcc9b7a1a4d1188bd62
