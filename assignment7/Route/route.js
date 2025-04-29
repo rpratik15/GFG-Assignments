@@ -4,8 +4,10 @@ const router=express.Router()
 router.use(express.json())
 
 
-router.get("/",async (req,res)=>{
-    await personModel.find().then(data=>res.json(data))
+router.get("/", (req,res)=>{
+    console.log("In all route");
+    // res.send("Home")
+     personModel.find().then(data=>res.json(data))
     })
 
 
