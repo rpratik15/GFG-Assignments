@@ -6,6 +6,6 @@ const newSchema=new mongoose.Schema({
     email:{type:String, unique:true}
 })
 
-const personModel=mongoose.model('person',newSchema)
+const personModel=mongoose.model('people',newSchema)
 
 module.exports=personModel;
