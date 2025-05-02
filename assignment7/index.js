@@ -34,5 +34,10 @@ app.put("/:id",(req,res)=>{
     personModel.findByIdAndUpdate(stdId,{age,email},{new:true}).then(data=>res.json(data));
 })
 
+app.delete("/:id",(req,res)=>{
+    personModel.findByIdAndDelete(req.params.id).then(data=>res.send("Deleted successfully"))
+    .catch(err=>res.send("Error in deleting data"))
+})
+
 
 
