@@ -1,0 +1,43 @@
+.Card
+{
+    width: 300px;
+    height: 400px;
+    border-radius: 10px;
+    background-color: #fcf7f7;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    /* object-fit: cover; */
+   
+}
+
+h2,P
+{
+    
+    margin: 0;
+    padding: 5px;
+    
+}
+
+.Card-image
+{
+    width: 100%;
+    height: 65%;
+    border-radius: 10px 10px 0 0;
+}
+
+.Card-buttons
+{
+    display: flex;
+    justify-content:space-between;
+    
+}
+
+.grp2,.grp1
+{
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+    padding: 15px;
+}
