@@ -39,17 +39,19 @@ form
   
 width: 150px;
   gap: 10px;
-  padding: 10px;
+  padding: 15px;
+  margin-left: 5px;
   background-color: rgb(252, 225, 176);
   border-radius: 16px;
-  box-shadow: 0 -4px 4px rgba(0, 0, 0, 0.2);
+  box-shadow: inset 1px 0px 4px 1px rgba(0, 0, 0, 0.2);
+  
   color: rgb(240, 31, 31);
 }
 
 .cardItem:hover
 {
   background-color: rgb(234, 247, 203);
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0px 10px rgba(0, 0, 0, 0.2);
   color: rgb(31, 2, 2);
 }
 
