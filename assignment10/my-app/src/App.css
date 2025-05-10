@@ -1,0 +1,22 @@
+
+nav{
+  margin-left: 50%;
+  display: flex;
+  justify-content: space-evenly;
+}
+.feedback
+{
+  border: 1px solid black;
+
+
+
+
+}
+
+.myForm
+{
+ 
+  display: flex;
+  flex-direction: column;
+  height: 400px;
+}
