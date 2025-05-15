@@ -1,0 +1,62 @@
+
+nav{
+  margin-left: 50%;
+  display: flex;
+  justify-content: space-evenly;
+}
+.feedback
+{
+  background-color: rgba(241, 239, 239, 0.993);
+
+
+
+
+}
+form
+{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  gap: 10px;
+  padding: 20px;
+}
+
+.card
+{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 20px;
+  gap: 10px;
+  padding: 20px;
+ 
+}
+.cardItem
+{
+  
+width: 150px;
+  gap: 10px;
+  padding: 15px;
+  margin-left: 5px;
+  background-color: rgb(252, 225, 176);
+  border-radius: 16px;
+  box-shadow: inset 1px 0px 4px 1px rgba(0, 0, 0, 0.2);
+  
+  color: rgb(240, 31, 31);
+}
+
+.cardItem:hover
+{
+  background-color: rgb(234, 247, 203);
+  box-shadow: 0 0px 10px rgba(0, 0, 0, 0.2);
+  color: rgb(31, 2, 2);
+}
+
+/* .cardItem>h3
+{
+  font-size: 20px;
+  color: rgb(221, 22, 22);
+} */
